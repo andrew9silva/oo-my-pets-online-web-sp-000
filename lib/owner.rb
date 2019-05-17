@@ -30,6 +30,10 @@ class Owner
       if species == :dogs
         walk.each do |dog|
           dog.mood = "happy"
+        end
+      end
+    end
+  end
 
   def self.all
     @@all
