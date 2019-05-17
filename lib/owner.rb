@@ -26,12 +26,10 @@ class Owner
   end
 
   def walk_dogs
-    @pets.find do |species|
+    @pets.collect do |species, walk|
       if species == :dogs
-        dog.mood = "happy"
-      end
-    end
-  end
+        walk.each do |dog|
+          dog.mood = "happy"
 
   def self.all
     @@all
