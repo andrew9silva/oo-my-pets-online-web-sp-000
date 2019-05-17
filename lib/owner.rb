@@ -25,6 +25,14 @@ class Owner
     @pets[:dogs] << Dog.new(dog_name)
   end
 
+  def walk_dogs
+    @pets.find do |species|
+      if species == :dogs
+        dog.mood = "happy"
+      end
+    end
+  end
+
   def self.all
     @@all
   end
