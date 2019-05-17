@@ -58,6 +58,7 @@ class Owner
   def sell_pets
     @pets.clear
     @pets = "nervous"
+  end
 
   def self.all
     @@all
