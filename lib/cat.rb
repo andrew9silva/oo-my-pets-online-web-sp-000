@@ -4,4 +4,5 @@ class Cat
   def initialize
     @name = name
     @cat = cat
+  end
 end
