@@ -9,6 +9,9 @@ class Owner
     @pets = {:fishes => [], :cats => [], :dogs => []}
   end
 
+  def say_species
+    "I am {@species}."
+
   def self.all
     @@all
   end
