@@ -67,7 +67,7 @@ class Owner
   def list_pets
     dogs = @pets[:dogs].size
     cats = @pets[:cats].size
-    fish = @pets[fishes].size
+    fish = @pets[:fishes].size
     "I have #{fish} fish, #{dogs} dog(s), and #{cats} cat(s)."
   end
 
